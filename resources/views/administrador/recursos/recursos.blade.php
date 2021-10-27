@@ -2,13 +2,6 @@
 @section('titulo','Recursos')
 @section('contenido')
 
-<div class="row">
-  <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-    <h3>Gestión de Recursos</h3>
-  </div>
-</div>
-
-
 <div id="recurso" class="container">
     <div class="row">
       <div class="col">
@@ -35,7 +28,7 @@
                 <!--<td><center>@{{sala.cupo}}</center></td>-->
                 
                 <td>
-                 <center><span class="fa fa-check btn btn-xs btn-primary" data-toggle="modal" data-target="#editarRec" v-on:click="guardarRec(recurso.id_recurso)"></span>
+                 <center><span class="fa fa-pencil btn btn-xs btn-primary" data-toggle="modal" data-target="#editarRec" v-on:click="guardarRec(recurso.id_recurso)"></span>
 
                   <span class="fa fa-trash btn btn-xs btn-danger" v-on:click="eliminarRec(recurso.id_recurso)"></span></center>
 
